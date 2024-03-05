@@ -728,6 +728,8 @@ require('lazy').setup {
       -- Load the colorscheme here
       vim.cmd [[colorscheme onedark_vivid]]
 
+      vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#2f333d' })
+
       -- You can configure highlights by doing something like
       vim.cmd.hi 'Comment gui=none'
     end,
