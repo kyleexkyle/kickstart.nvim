@@ -1,4 +1,8 @@
 local opt = vim.opt --for conciseness
+local api = vim.api
+
+api.nvim_set_keymap('n', '<Tab>', '<Nop>', { noremap = true })
+api.nvim_set_keymap('n', '<CR>', '<Nop>', { noremap = true })
 
 -- line numbers
 opt.relativenumber = true
@@ -51,5 +55,4 @@ opt.swapfile = false
 
 opt.scrolloff = 15
 opt.colorcolumn = '80'
-opt.updatetime = 50
 opt.linespace = 15
